@@ -1,21 +1,30 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/Baribok/-/main/data.lua"))()
 
-local Window = Library.CreateLib("Ants Simulator by baribok1", "RJTheme3")
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+
+ Section:NewButton("ants hub", "ants hub", function()
+ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+ 
+local Window = Library.CreateLib("Ants Simulator by админ спек за мной сука", "RJTheme3")
 
 local Tab = Window:NewTab("инфо")
 
-local Section = Tab:NewSection("инфо все в консоли")
+local Window = Library.CreateLib("Ants Simulator by админ спек за мной сука", "RJTheme4")
 
-Section:NewButton("скрипт от игрока baribok1 ", "скрипт от игрока baribok1", function()
+local Tab = Window:NewTab("инфо")
+
+local Section = Tab:NewSection("админ спек за мной сука")
+
+Section:NewButton(" ", "скрипт от группы админ спек за мной сука", function()
     print("")
 end)
 
-Section:NewButton("дискорд Greenn#4077", "дискорд Greenn#4077", function()
+Section:NewButton("дискорд кто сделал скрипт https://discord.gg/2YfFwBUK", "дискорд https://discord.gg/2YfFwBUK", function()
     print("")
 end)
 
 Section:NewButton("??", "??", function()
-    game:service('Players').LocalPlayer:Kick('Кик бехиватор!')
+    game:service('Players').LocalPlayer:Kick('https://discord.gg/2YfFwBUK')
 end)
 
 local Tab = Window:NewTab("антс симулятор")
@@ -41,3 +50,7 @@ Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
 		end
 		end
 end)
+end)
+else
+  game:service('Players').LocalPlayer:Kick(' client behavior : Кадури хуй сасет')
+end
